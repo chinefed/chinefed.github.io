@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=1050, initial-scale=0.3, minimum-scale=0.1, maximum-scale=3.0, user-scalable=yes">
   <meta name="google-site-verification" content="2Ki8tfLS8t2cLtQ2_kwYQLQpo9TQCkIhmy7P67v1n1Y" />
-  <title>Federico Chinello | Publications, Software, and Contact</title>
+  <title>Federico Chinello | AI Researcher @ IFOM</title>
   <meta name="description" content="Official website of Federico Chinello: publications, software projects, selected results, and contact information." />
   <style>
     :root {
@@ -20,7 +20,7 @@
     a:hover { text-decoration:underline }
 
     .wrap { width:var(--maxw); margin:28px auto; padding:0 }
-    .card { background:var(--paper); border:1px solid var(--rule); border-radius:var(--rad); box-shadow:0 12px 34px var(--shadow); width: 1050px; margin:0 auto; }
+    .card { background:var(--paper); border:1px solid var(--rule); border-radius:var(--rad); box-shadow:0 12px 34px var(--shadow); width: 1050px; margin:0 auto; overflow: hidden;}
 
     header { background:linear-gradient(#fff,#f2f6ff); padding:20px 20px 60px; position:relative }
     .mast { display:flex; gap:16px; align-items:center }
@@ -76,7 +76,7 @@
         <div class="mast">
           <div>
             <h1>Federico Chinello</h1>
-            <p class="tagline">Publications, software, and contact</p>
+            <p class="tagline">AI Researcher @ IFOM</p>
           </div>
         </div>
         <nav>
@@ -97,18 +97,19 @@
             <div class="about-grid">
               <div class="about-media">
                 <img class="portrait" src="assets/photo.jpeg" alt="Firstname Lastname portrait">
-                <a class="btn btn-block" href="cv.pdf" download>⬇️ Download CV (PDF)</a>
+                <a class="btn btn-block" href="cv.pdf" download> Download CV </a>
               </div>
               <div>
-                <p class="lead">
-                  I am currently completing an MSc in Artificial Intelligence at Bocconi University. I work as a <em>Research Fellow</em> at the <strong>AIRC Institute of Molecular Oncology (IFOM)</strong> in <a href="https://www.ifom.eu/en/cancer-research/research-labs/research-lab-doksani.php">Ylli Doksani’s lab</a>, where I develop computer vision and AI solutions to support biomedical research. I am also part of the Computational Biology group led by <a href="https://www.oncology.ox.ac.uk/team/francesca-buffa">Prof. Francesca Buffa</a> at Bocconi, and I am conducting my master’s thesis on Convolutional Set Transformers—a novel neural architecture we introduced <a href="https://www.arxiv.org/abs/2509.22889">here</a>—under the supervision of <a href="https://boracchi.faculty.polimi.it">Prof. Giacomo Boracchi</a> (Politecnico di Milano). My research interests focus on <strong>deep learning architectures and methods</strong>, with particular emphasis on applications in <strong>computer vision</strong> and <strong>bioinformatics</strong>.
-                <div class="chips">
-                  <span class="chip">Artificial Intelligence</span>
-                  <span class="chip">Deep Learning</span>
-                  <span class="chip">Machine Learning</span>
-                  <span class="chip">Computer Vision</span>
-                  <span class="chip">Bioinformatics</span>
-                </div>
+                  I work as a <em>Research Fellow</em> at the <strong>AIRC Institute of Molecular Oncology (IFOM)</strong>
+                  in <a href="https://www.ifom.eu/en/cancer-research/research-labs/research-lab-doksani.php">Dr. Ylli Doksani</a>’s lab,
+                  where I develop computer vision and AI solutions to support biomedical research. 
+                  I am also part of the Computational Biology group led by 
+                  <a href="https://www.oncology.ox.ac.uk/team/francesca-buffa">Prof. Francesca Buffa</a> at Bocconi University and
+                  collaborate with <a href="https://boracchi.faculty.polimi.it">Prof. Giacomo Boracchi</a> (Politecnico di Milano),
+                  on Convolutional Set Transformers, a novel neural architecture
+                  we introduced <a href="https://www.arxiv.org/abs/2509.22889">here</a>.
+                  My research interests focus on <strong>deep learning architectures and methods</strong>,
+                  with particular emphasis on applications in <strong>computer vision</strong> and <strong>bioinformatics</strong>.
               </div>
             </div>
           </section>
@@ -116,8 +117,11 @@
           <section id="news">
             <h2>News &amp; Highlights</h2>
             <ul>
-              <li><span class="date"><strong>Oct 2025:</strong></span> I've joined the AIRC Institute of Molecular Oncology as a <em>Research Fellow</em>!</li>
-              <li><span class="date"><strong>Sep 2025:</strong></span> The <em>Convolutional Set Transformer</em> preprint is available on ArXiv!</li>
+              <li><span class="date"><strong>May 2026: </strong></span> Released <em>DNA2Graph</em>, an open-source image analysis software for automated segmentation
+              and classification of DNA molecules in electron microscopy images obtained by rotary shadowing.</li>
+              <li><span class="date"><strong>Apr 2026:</strong></span> Graduated <em>cum laude</em> from the MSc in Artificial Intelligence at Bocconi University.
+              This is my second MSc degree after previously completing an MSc in Finance.</li>
+              <li><span class="date"><strong>Oct 2025:</strong></span> Joined the AIRC Institute of Molecular Oncology as a <em>Research Fellow</em>.</li>
             </ul>
           </section>
 
@@ -127,18 +131,32 @@
               <li>
                 <strong>Convolutional Set Transformer</strong> [ <a href="https://www.arxiv.org/abs/2509.22889">pdf</a> · <a href="https://github.com/chinefed/convolutional-set-transformer">code</a> ]<br>
                 Chinello, F., & Boracchi, G., arXiv preprint, 2025. 
-                <p class="desc">We introduce a novel neural architecture designed to process image sets of arbitrary cardinality that are visually heterogeneous yet share high-level semantics (such as a common category, scene, or concept).</p>
+                <p class="desc">We introduce a novel neural architecture designed to process image sets of arbitrary cardinality that are visually heterogeneous yet share high-level semantics.</p>
               </li>
             </ul>
           </section>
 
           <section id="software">
             <h2>Software</h2>
+            <figure style="text-align:center;">
+              <img 
+              src="assets/d2g_gui.jpg" 
+              alt="DNA2Graph GUI" 
+              width="350"
+              style="display:block; margin:0 auto;"
+              >
+          </figure>
             <ul class="stacked">
               <li>
-                <strong>cstmodels</strong> [ <a href="https://github.com/chinefed/convolutional-set-transformer">code</a> · <a href="https://chinefed.github.io/convolutional-set-transformer/">docs</a> · <a href="https://pypi.org/project/cstmodels/">PyPI</a> ]<br>
-                Chinello, F., 2025. 
-                <p class="desc">This package, available on PyPI, provides the reference implementation of the Convolutional Set Transformer. It includes reusable Keras 3 layers for building CST architectures, and provides an easy interface to load and use the CST-15 model pre-trained on ImageNet.</p>
+                <strong>DNA2Graph</strong> [ <a href="https://github.com/chinefed/DNA2Graph">code</a> · <a href="https://federicochinello.com/DNA2Graph/">website</a> · <a href="https://pypi.org/project/dna2graph/">PyPI</a> ]<br>
+                <p class="desc">Imaging software that automates the segmentation and analysis of DNA molecules in electron
+                microscopy images, streamlining workflows that were previously done manually by researchers.</p>
+              </li>
+              <li>
+                <strong>cstmodels</strong> [ <a href="https://github.com/chinefed/convolutional-set-transformer">code</a> · <a href="https://federicochinello.com/convolutional-set-transformer/">website</a> · <a href="https://pypi.org/project/cstmodels/">PyPI</a> ]<br>
+                <p class="desc">This package, available on PyPI, provides the reference implementation of the Convolutional Set Transformer.
+                It includes reusable Keras 3 layers for building CST architectures, and provides an easy interface to load and
+                use the CST-15 model pre-trained on ImageNet.</p>
               </li>
             </ul>
           </section>
@@ -148,12 +166,34 @@
             <img src="assets/graphical_abstract.png" alt="Graphical Abstract CST">
             <br><hr class="sep"><br>
             <p class="desc">
-            <strong>Set Anomaly Detection is a binary classification task meant to identify images in a set that are anomalous or inconsistent with the majority of the set.</strong> Here, the notion of anomaly is relative: the same image may be considered anomalous in one set but not in another, depending on the surrounding context. The Figure below shows two image sets derived from the CelebA dataset (Liu et al., 2015). In each set, a majority of normal images share two attributes ("wearing hat" and "smiling" in the first, "no beard" and "attractive" in the second), while a minority lack these attributes and are thus anomalous. After training a CST and a Set Trasnsformer (Lee et al., 2019) on CelebA for Set Anomaly Detection, we evaluate the explainability of their predictions by overlaying Grad-CAMs on anomalous images. CST explanations correctly highlight the anomalous regions, whereas ST explanations fail to provide meaningful insights. For more details see Chinello & Boracchi (2025).
+            <strong>Set Anomaly Detection is a binary classification task meant to identify images in a set
+            that are anomalous or inconsistent with the majority of the set.</strong> Here, the notion of anomaly
+            is relative: the same image may be considered anomalous in one set but not in another,
+            depending on the surrounding context.
+            The Figure below shows two image sets derived from the CelebA dataset (Liu et al., 2015).
+            In each set, a majority of normal images share two attributes ("wearing hat" and "smiling"
+            in the first, "no beard" and "attractive" in the second), while a minority lack
+            these attributes and are thus anomalous. After training a CST and
+            a Set Trasnsformer (Lee et al., 2019) on CelebA for Set Anomaly Detection,
+            we evaluate the explainability of their predictions by overlaying Grad-CAMs on anomalous images.
+            CST explanations correctly highlight the anomalous regions, whereas ST explanations fail
+            to provide meaningful insights. For more details see Chinello & Boracchi (2025).
             </p>
             <img src="assets/gradcam_anomaly.png" alt="Set Anomaly Detection">
             <br><hr class="sep"><br>
             <p class="desc">
-            <strong>The Figure below presents a qualitative comparison of Grad-CAMs generated for our CST-15 model (28M params), ConvNeXt-XL (350M params), ResNet50 (26M params), and VGG-19 (144M params).</strong> To ensure a fair comparison, we feed isolated images without context to CST-15. Explanations are computed with respect to the ground truth class. CST-15 Grad-CAMs are more precise and focused compared to ResNet50 and VGG-19, and comparable or even better than ConvNeXt-XL explanations. Consider, for instance, the first image (first row in the Figure below). It depicts a space shuttle being transported by a shuttle carrier aircraft. Even to the human eye, it is difficult to distinguish the shuttle from the carrier aircraft. However, the CST-15 explanation map accurately identifies the space shuttle, distinguishing it from the aircraft. In contrast, the Grad-CAMs generated for the other models are significantly less precise, highlighting a coarse region that encompasses both the shuttle and the carrier aircraft. For more details see Chinello & Boracchi (2025).
+            <strong>The Figure below presents a qualitative comparison of Grad-CAMs generated
+            for our CST-15 model (28M params), ConvNeXt-XL (350M params), ResNet50 (26M params),
+            and VGG-19 (144M params).</strong> To ensure a fair comparison, we feed isolated images
+            without context to CST-15. Explanations are computed with respect to the ground truth class.
+            CST-15 Grad-CAMs are more precise and focused compared to ResNet50 and VGG-19, and comparable
+            or even better than ConvNeXt-XL explanations. Consider, for instance, the first image
+            (first row in the Figure below). It depicts a space shuttle being transported by a shuttle
+            carrier aircraft. Even to the human eye, it is difficult to distinguish the shuttle from the carrier
+            aircraft. However, the CST-15 explanation map accurately identifies the space shuttle, distinguishing
+            it from the aircraft. In contrast, the Grad-CAMs generated for the other models are significantly less
+            precise, highlighting a coarse region that encompasses both the shuttle and the carrier aircraft.
+            For more details see Chinello & Boracchi (2025).
             </p><br>
             <img src="assets/cst15_gradcam_comparison.png" alt="Grad-CAM: CST-15 vs CNNs ">
           </section>
@@ -163,18 +203,38 @@
           <div class="box">
             <h2>Contact &amp; Links</h2>
             <ul class="contact">
-              <li>✉️ <a href="mailto:federico.chinello@sifom.eu">federico.chinello@ifom.eu</a></li>
+              <li>✉️ <a href="mailto:federico.chinello@ifom.eu">federico.chinello@ifom.eu</a></li>
               <li>📚 <a href="https://scholar.google.com/citations?user=Pf02K6gAAAAJ&hl=it&oi=sra">Google Scholar</a></li>
               <li>💻 <a href="https://github.com/chinefed">GitHub</a></li>
             </ul>
           </div>
 
           <div class="box">
-            <h2>Download CST-15</h2>
+            <h2>DNA2Graph</h2>
+            <img class="thumb" src="assets/d2g.jpg" alt="DNA2Graph illustration">
+            <p class="desc">We present DNA2Graph, an open-source image analysis software for automated
+            segmentation and classification of DNA molecules in electron microscopy images obtained by rotary shadowing.
+            DNA2Graph provides a graphical user interface, enabling straightforward use on personal computers,
+            alongside a command-line interface that supports scalable execution on HPC systems.
+            <a class="btn" href="https://github.com/chinefed/DNA2Graph">Source Code</a>&ensp;
+            <a class="btn" href="https://federicochinello.com/DNA2Graph/">Website</a>
+          </div>
+          
+          <div class="box">
+            <h2>CST-15</h2>
             <img class="thumb" src="assets/cst15.png" alt="CST-15 illustration">
-            <p class="desc">We introduce CST-15, a CST with 28M parameters trained on ImageNet. CST-15 is the first set-learning backbone pre-trained on a large-scale dataset. It can be adapted to diverse downstream tasks via Transfer Learning. Notably, CSTs fully support standard CNN explainability tools. The Figure above shows Grad-CAM overlays for an image set provided as input to CST-15, with respect to the ground-truth class. CST-15 is readily available through our <strong>cstmodels</strong> package (<code>pip install cstmodels</code>), which also offers reusable Keras 3 layers for building custom CST architectures from scratch.
+            <p class="desc">
+            We introduce CST-15, a 28M-parameter Convolutional Set Transformer trained on ImageNet
+            that can be readily adapted to a wide range of downstream tasks using standard transfer learning schemes.
+            CST-15 is the first set-learning backbone pre-trained on a large-scale dataset.
+            Notably, CSTs fully support standard CNN explainability tools.
+            The Figure above shows Grad-CAM overlays for an image set provided as input to CST-15,
+            with respect to the ground-truth class. 
+            CST-15 is available through our <strong>cstmodels</strong> package
+            (<code>pip install cstmodels</code>), which also offers reusable Keras 3 layers
+            for building custom CST architectures from scratch.
             <a class="btn" href="https://github.com/chinefed/convolutional-set-transformer">Source Code</a>&ensp;
-            <a class="btn" href="https://chinefed.github.io/convolutional-set-transformer/">API Docs</a>
+            <a class="btn" href="https://federicochinello.com/convolutional-set-transformer/">Website</a>
           </div>
         </aside>
       </div>
