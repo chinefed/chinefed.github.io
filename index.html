@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=1050, initial-scale=0.3, minimum-scale=0.1, maximum-scale=3.0, user-scalable=yes">
+  <meta name="viewport" content="width=1050, initial-scale=1">
   <meta name="google-site-verification" content="2Ki8tfLS8t2cLtQ2_kwYQLQpo9TQCkIhmy7P67v1n1Y" />
   <title>Federico Chinello | AI Researcher @ IFOM</title>
   <meta name="description" content="Official website of Federico Chinello: publications, software projects, selected results, and contact information." />
@@ -10,17 +10,17 @@
     :root {
       --bg:#f7f7f7; --paper:#fff; --ink:#222; --muted:#6a6a6a; --rule:#d9e2ef;
       --link:#0a58ca; --nav1:#eef5ff; --nav2:#dbeaff; --shadow:rgba(0,0,0,.08);
-      --rad:14px; --maxw:1050px; --g:22px; --portrait-w:220px;
+      --rad:14px; --maxw:1050px; --page-w:1050px; --g:22px; --portrait-w:220px;
     }
     * { box-sizing:border-box; margin:0; padding:0 }
     body { font:16px/1.6 Georgia,"Times New Roman",serif; color:var(--ink); background:var(--bg); padding-bottom:40px }
-    html, body {overflow-x: auto; }
+    html, body { min-width:var(--page-w); overflow-x:auto; }
     img { max-width:100%; display:block }
     a { color:var(--link); text-decoration:none }
     a:hover { text-decoration:underline }
 
-    .wrap { width:var(--maxw); margin:28px auto; padding:0 }
-    .card { background:var(--paper); border:1px solid var(--rule); border-radius:var(--rad); box-shadow:0 12px 34px var(--shadow); width: 1050px; margin:0 auto; overflow: hidden;}
+    .wrap { width:var(--page-w); min-width:var(--page-w); margin:28px auto; padding:0 }
+    .card { background:var(--paper); border:1px solid var(--rule); border-radius:var(--rad); box-shadow:0 12px 34px var(--shadow); width:var(--page-w); min-width:var(--page-w); margin:0 auto; overflow: hidden;}
 
     header { background:linear-gradient(#fff,#f2f6ff); padding:20px 20px 60px; position:relative }
     .mast { display:flex; gap:16px; align-items:center }
@@ -28,13 +28,13 @@
     .tagline { margin-top:2px; color:var(--muted); font-size:18px }
 
     nav { position:absolute; bottom:0; left:20px; right:20px; border-bottom:1px solid var(--rule) }
-    .tabs { display:flex; gap:10px; flex-wrap:wrap; align-items:flex-end }
+    .tabs { display:flex; gap:10px; flex-wrap:nowrap; align-items:flex-end }
     .tab { padding:10px 18px; border:1px solid #c9d7ec; border-bottom:none; border-radius:12px 12px 0 0;
            background:linear-gradient(var(--nav1),var(--nav2)); font:14px/1.1 Verdana,sans-serif; color:#2a3a4a }
     .tab.active { background:#fff; font-weight:600 }
 
     .shell { padding:var(--g) }
-    .grid { display:grid; grid-template-columns:2fr 1fr; gap:var(--g); width: 100%;  }
+    .grid { display:grid; grid-template-columns:656px 328px; gap:var(--g); width:100%; }
 
     h2 { font-size:22px; margin-bottom:10px; border-bottom:1px solid var(--rule); padding-bottom:6px }
     section+section { margin-top:var(--g) }
