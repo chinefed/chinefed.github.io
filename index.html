@@ -10,11 +10,11 @@
     :root {
       --bg:#f7f7f7; --paper:#fff; --ink:#222; --muted:#6a6a6a; --rule:#d9e2ef;
       --link:#0a58ca; --nav1:#eef5ff; --nav2:#dbeaff; --shadow:rgba(0,0,0,.08);
-      --rad:14px; --maxw:1050px; --page-w:1050px; --g:22px; --portrait-w:220px;
+      --rad:14px; --maxw:1050px; --page-w:1050px; --g:22px; --content-w:calc(var(--page-w) - (2 * var(--g)) - 2px); --portrait-w:220px;
     }
     * { box-sizing:border-box; margin:0; padding:0 }
     body { font:16px/1.6 Georgia,"Times New Roman",serif; color:var(--ink); background:var(--bg); padding-bottom:40px }
-    html, body { min-width:var(--page-w); overflow-x:auto; }
+    html, body { min-width:var(--page-w); overflow-x:auto; -webkit-text-size-adjust:100%; text-size-adjust:100%; }
     img { max-width:100%; display:block }
     a { color:var(--link); text-decoration:none }
     a:hover { text-decoration:underline }
@@ -33,8 +33,8 @@
            background:linear-gradient(var(--nav1),var(--nav2)); font:14px/1.1 Verdana,sans-serif; color:#2a3a4a }
     .tab.active { background:#fff; font-weight:600 }
 
-    .shell { padding:var(--g) }
-    .grid { display:grid; grid-template-columns:656px 328px; gap:var(--g); width:100%; }
+    .shell { width:100%; min-width:100%; padding:var(--g) }
+    .grid { display:grid; grid-template-columns:655px 327px; gap:var(--g); width:var(--content-w); min-width:var(--content-w); }
 
     h2 { font-size:22px; margin-bottom:10px; border-bottom:1px solid var(--rule); padding-bottom:6px }
     section+section { margin-top:var(--g) }
