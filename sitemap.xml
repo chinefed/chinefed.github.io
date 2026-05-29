@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://federicochinello.com/</loc>
+  </url>
+
+  <url>
+    <loc>https://federicochinello.com/DNA2Graph/</loc>
+  </url>
+
+  <url>
+    <loc>https://federicochinello.com/DNA2Graph/download.html</loc>
+  </url>
+
+  <url>
+    <loc>https://federicochinello.com/DNA2Graph/docs.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://federicochinello.com/DNA2Graph/tutorials.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://federicochinello.com/DNA2Graph/outputs.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://federicochinello.com/convolutional-set-transformer/</loc>
+  </url>
+  
+  <url>
+    <loc>https://federicochinello.com/convolutional-set-transformer/api/</loc>
+  </url>
+
+</urlset>
